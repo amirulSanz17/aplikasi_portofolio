@@ -142,8 +142,7 @@ Relasi:
 ## Styling
 
 - `assets/css/layout.css`: styling utama halaman (grid card dashboard, komponen umum)
-- `assets/css/tampilan.css`: styling khusus halaman detail portofolio (`modules/tampilkan.php`)
-
+- 
 ---
 
 ## Cara Menjalankan
@@ -156,14 +155,6 @@ Relasi:
 
 ---
 
-## Catatan Performa & Praktik
-
-- Penggunaan session untuk pembatasan akses (`modules/tampilkan.php`, `modules/edit.php`, dll.)
-- Upload file menggunakan `enctype="multipart/form-data"` pada form.
-- Pemisahan CSS untuk halaman detail.
-
----
-
 ## Penutup
 
 Aplikasi ini memenuhi kebutuhan tugas PBW berupa pengimplementasian:
@@ -172,5 +163,3 @@ Aplikasi ini memenuhi kebutuhan tugas PBW berupa pengimplementasian:
 - CRUD data (portofolio)
 - Pemisahan modul & view
 - Desain database relasional dan penggunaan MySQLi
-
-Jika ingin menambahkan fitur lanjutan (mis. validasi form lebih ketat, sanitasi input, dan peningkatan keamanan), bisa diterapkan setelah dasar proyek selesai.
