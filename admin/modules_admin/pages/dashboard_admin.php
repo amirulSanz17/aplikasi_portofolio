@@ -107,7 +107,11 @@
                                                 <td><?= $row['nama_jenis'] ?></td>
                                                 <td><?= $row['judul'] ?></td>
                                                 <td><?= $row['deskripsi'] ?></td>
-                                                <td><a href="<?= $row['link'] ?>"></a></td>
+                                                <td class="admin-portofolio-link">
+                                                    <a href="<?= $row['link'] ?>" target="_blank" rel="noreferrer">
+                                                        <?= htmlspecialchars($row['link']) ?>
+                                                    </a>
+                                                </td>
                                                 <td><img src="../assets/image/portofolio/<?=$row['bukti'] ? $row['bukti'] : 'no_image.png' ?>" height="50px"></td>
                                                 <td><?= $row['created_at'] ?></td>
                                             </tr>

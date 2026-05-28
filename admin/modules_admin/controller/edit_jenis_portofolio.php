@@ -35,6 +35,6 @@
 <form action="ubah_jenis_portofolio.php" method="post" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?=$row['id']; ?>">
     nama jenis: <input type="text" name="nama_jenis" value="<?=$row['nama_jenis']; ?>"><br><br>
-    deskripsi : <input type="text" name="deskripsi" value="<?=$row['deskripsi']; ?>"><br><br>
+    deskripsi : <input type="text" name="deskripsi_jenis" value="<?=$row['deskripsi_jenis']; ?>"><br><br>
     <input type="submit" value="kirim">
 </form>

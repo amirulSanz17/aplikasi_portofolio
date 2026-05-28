@@ -6,7 +6,7 @@
     
     // Ambil data dari form
     $nama_jenis = $_POST['nama_jenis'];
-    $deskripsi = $_POST['deskripsi'];
+    $deskripsi = $_POST['deskripsi_jenis'];
 
     // Validasi input
     if (
@@ -15,12 +15,12 @@
         mb_strlen($nama_jenis) > 200 ||
         mb_strlen($deskripsi) > 1000
     ) {
-        header('Location: tambah_portofolio.php?error=Data tidak valid');
+        header('Location: tambah_jenis_portofolio.php?error=Data tidak valid');
         exit();
     }
     // Masukkan data ke tabel jenis_portofolio
         $sql = "INSERT INTO jenis_portofolio 
-            (nama_jenis, deskripsi) 
+            (nama_jenis, deskripsi_jenis) 
             VALUES (?, ?)";
         $stmt = mysqli_prepare($conn, $sql);
         mysqli_stmt_bind_param(

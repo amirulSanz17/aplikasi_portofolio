@@ -185,7 +185,21 @@ a:hover {
   background: #ff4d4d;
 }
 
-/* ===== DETAIL (FULL PAGE) ===== */
+
+.admin-portofolio-link {
+  white-space: nowrap;
+}
+
+.admin-portofolio-link a {
+  margin-left: 10px;
+  display: inline-block;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  word-break: break-word;
+}
+
 .portofolio-detail-wrapper {
   width: 100%;
   background: #ffffff;
@@ -312,7 +326,6 @@ a:hover {
   flex-wrap: wrap;
 }
 
-/* ===== TABLE (tetap ada jika masih dipakai halaman lain) ===== */
 table {
   width: 100%;
 
@@ -326,7 +339,6 @@ table {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* HEADER */
 table th {
   background: linear-gradient(135deg, var(--blue), var(--blue-light));
 
@@ -337,7 +349,6 @@ table th {
   font-size: 16px;
 }
 
-/* ISI */
 table td {
   padding: 20px 15px;
 
@@ -346,12 +357,10 @@ table td {
   border-bottom: 1px solid #f1f1f1;
 }
 
-/* HOVER */
 table tbody tr:hover {
   background: #f8fbff;
 }
 
-/* FOTO */
 table img {
   width: 80px;
   height: 80px;
@@ -361,7 +370,6 @@ table img {
   border-radius: 12px;
 }
 
-/* ===== FOOTER ===== */
 .site-footer {
   background: linear-gradient(135deg, var(--blue-dark), var(--blue));
 
@@ -378,7 +386,6 @@ table img {
   margin: 0;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   main {
     width: 95%;

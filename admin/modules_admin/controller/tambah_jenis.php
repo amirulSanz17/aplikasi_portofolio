@@ -22,8 +22,8 @@ $query = mysqli_query($conn, "SELECT * FROM jenis_portofolio");
     </div>
 
     <div class="form-group">
-        <label for="deskripsi">Deskripsi</label>
-        <input type="text" id="deskripsi" name="deskripsi" maxlength="1000" required>
+        <label for="deskripsi_jenis">Deskripsi</label>
+        <input type="text" id="deskripsi_jenis" name="deskripsi_jenis" maxlength="1000" required>
     </div>
 
     <input type="submit" value="kirim">

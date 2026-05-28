@@ -35,7 +35,7 @@
                                         <tr>
                                             <td><?= $no++ ?></td>
                                             <td><?= $row['nama_jenis'] ?></td>
-                                            <td><?= $row['deskripsi'] ?></td>
+                                            <td><?= $row['deskripsi_jenis'] ?></td>
                                             <td>
                                                 <a href="modules_admin/controller/edit_jenis_portofolio.php?id=<?= $row['id'] ?>" class="btn btn-primary btn-sm"> Edit</a>
                                                 <a href="modules_admin/controller/hapus_jenis_portofolio.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus jenis portofolio ini?')">Hapus</a>
