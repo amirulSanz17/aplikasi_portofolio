@@ -1,16 +1,14 @@
 <?php
 
-// Koneksi Database MySQL dengan PHP menggunakan MySQLi
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'sistem_portofolio';
+$env = parse_ini_file(__DIR__ . '/../.env');
 
-$conn = new mysqli($host, $username, $password, $dbname);
+$host = $env['DB_HOST'];
+$user = $env['DB_USER'];
+$pass = $env['DB_PASS'];
+$db   = $env['DB_NAME'];
 
-if( ! $conn ){
-    die("Koneksi Gagal: " . mysqli_connect_error());
+$conn = mysqli_connect($host, $user, $pass, $db);
+
+if (!$conn) {
+    die("Koneksi database gagal: " . mysqli_connect_error());
 }
-//echo "koneksi berhasil";
-
-?>
