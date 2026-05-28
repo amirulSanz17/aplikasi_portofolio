@@ -1,7 +1,3 @@
-/* Styling khusus halaman modules/tampilkan.php
-   Tujuan: pisahkan styling agar tidak bergantung penuh pada layout.css
-*/
-
 :root {
   --detail-blue: #0066cc;
   --detail-blue-light: #0099ff;
@@ -59,7 +55,6 @@ main h2 {
   margin-bottom: 14px;
 }
 
-/* badge sudah ada di layout.css, ini override minimal agar tetap konsisten */
 .badge {
   display: inline-flex;
   align-items: center;
