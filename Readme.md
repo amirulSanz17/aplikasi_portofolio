@@ -47,7 +47,7 @@ aplikasi_portofolio/
 │  │  ├─ login.css
 │  │  ├─ register.css
 │  │  ├─ tambah.css
-│  │  └─ tampilan.css   (styling khusus detail/tampilkan)
+│  │  └─ tampilan.css
 │  └─ image/
 │     ├─ portofolio/
 │     └─ users/
